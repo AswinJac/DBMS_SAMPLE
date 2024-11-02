@@ -1,3 +1,4 @@
+--create tables---
 CREATE TABLE CUSTOMER (
     cust_no VARCHAR(15) NOT NULL,
     name VARCHAR(15) NOT NULL,
@@ -34,6 +35,7 @@ CREATE TABLE PURCHASE (
     FOREIGN KEY (custno) REFERENCES CUSTOMER(cust_no),
     FOREIGN KEY (prono) REFERENCES PRODUCT(product_no)
 );
+-- ADD VAlUES TO TABLES--
 
 INSERT INTO CUSTOMER VALUES('C00001', 'Ivan Bayross', 35, 'Bombay', 400054, 'Maharashtra');
 INSERT INTO CUSTOMER VALUES('C00002', 'Vandana Saitwal', 35, 'Madras', 780001, 'Tamilnadu');
